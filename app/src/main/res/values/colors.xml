@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="first">#ff0000</color>
+    <color name="second">#e50000</color>
+    <color name="third">#cc0000</color>
+    <color name="fourth">#b20000</color>
+    <color name="fifth">#990000</color>
+    <color name="sixth">#7f0000</color>
+    <color name="seventh">#660000</color>
+    <color name="eighth">#4c0000</color>
+    <color name="nineth">#330000</color>
+    <color name="tenth">#190000</color>
+    <color name="default_rank">#000000</color>
+</resources>

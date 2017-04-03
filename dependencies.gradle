@@ -1,0 +1,23 @@
+ext {
+    supportLibraryVersion = '25.2.0'
+    retrofitVersion = '2.1.0'
+
+    dependencies = [
+            appCompat: "com.android.support:appcompat-v7:$supportLibraryVersion",
+            design :"com.android.support:design:$supportLibraryVersion",
+            retrofit: "com.squareup.retrofit2:retrofit:$retrofitVersion",
+            retrofitConverterGson: "com.squareup.retrofit2:converter-gson:$retrofitVersion",
+            retrofitAdapterRxJava: "com.squareup.retrofit2:adapter-rxjava:$retrofitVersion",
+            rxAndroid: 'io.reactivex:rxandroid:1.2.1',
+            expresso:'com.android.support.test.espresso:espresso-core:2.2.2',
+            dagger :'com.google.dagger:dagger:2.4',
+            daggerAnnotationProcessor :'com.google.dagger:dagger-compiler:2.6',
+            daggerProvided: 'javax.annotation:jsr250-api:1.0',
+            playservices :'com.google.android.gms:play-services:10.2.0',
+            ormliteCore :'com.j256.ormlite:ormlite-core:4.48',
+            ormlite :'com.j256.ormlite:ormlite-android:4.48',
+            jUnit: 'junit:junit:4.12',
+            mockito: 'org.mockito:mockito-core:1.10.19',
+            uiautomator :'com.android.support.test.uiautomator:uiautomator-v18:2.1.2'
+    ]
+}

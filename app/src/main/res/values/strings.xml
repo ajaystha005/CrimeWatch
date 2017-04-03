@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CrimeWatch</string>
+    <string name="map_key">AIzaSyBgrGzsakAROUqM1d1I3oIkmaKl8nslIUk</string>
+    <string name="app_title">Crime Watch</string>
+    <string name="search">Search Crimes</string>
+    <string name="error">Something went wrong</string>
+
+    <string name="google_map_error">Google Map is null</string>
+    <string name="loading">Loading Crime Data...</string>
+    <string name="clear_search">Do you like to clear search results?</string>
+    <string name="clear">CLEAR</string>
+    <string name="max_fetch">Max Fetch</string>
+</resources>

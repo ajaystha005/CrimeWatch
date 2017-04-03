@@ -1,0 +1,48 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+android {
+    compileSdkVersion rootProject.ext.androidCompileSdkVersion
+    buildToolsVersion rootProject.ext.androidBuildToolsVersion
+    defaultConfig {
+        applicationId "com.orion.crimewatch"
+        minSdkVersion rootProject.ext.androidMinSdkVersion
+        targetSdkVersion rootProject.ext.androidTargetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding{
+        enabled=true
+    }
+}
+
+dependencies {
+    Map<String, String> dependencies = rootProject.ext.dependencies
+    compile dependencies.appCompat
+    androidTestCompile(dependencies.expresso, {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile dependencies.design
+    compile dependencies.dagger
+    compile dependencies.retrofit
+    compile dependencies.retrofitConverterGson
+    compile dependencies.retrofitAdapterRxJava
+    compile dependencies.rxAndroid
+    annotationProcessor dependencies.daggerAnnotationProcessor
+    provided dependencies.daggerProvided
+
+    compile dependencies.playservices
+    compile dependencies.ormliteCore
+    compile dependencies.ormlite
+
+    androidTestCompile dependencies.uiautomator
+    testCompile dependencies.jUnit
+}
